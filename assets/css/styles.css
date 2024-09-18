@@ -556,6 +556,21 @@ background: #363434;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   background-color: #aca6a6;
 }
+/* About Us Section Responsiveness---------- */
+@media (max-width: 768px){
+  .title, .title-2{
+    font-size: 1.8rem;
+  }
+  .title-1-underline, .title-underline{
+    width: 100px;
+  }
+}
+
+
+
+
+
+
 
 
 /* Animations--------------------- */
