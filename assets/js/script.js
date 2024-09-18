@@ -40,4 +40,5 @@
          navlist.classList.remove("open");
      };
  });
- 
+
+//  Hero Section Animation----------
