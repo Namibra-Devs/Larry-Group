@@ -193,6 +193,77 @@
       </div>
     </section>
 
+    <!-- Companies Section------------------------ -->
+    <section class="companies-section py-5" id="companies">
+      <div class="container">
+        <!-- Toggle Links -->
+        <ul class="nav nav-tabs justify-content-center mb-4" id="companyTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="company1-tab" data-bs-toggle="tab" href="#company1" role="tab" aria-controls="company1" aria-selected="true">Company 1</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="company2-tab" data-bs-toggle="tab" href="#company2" role="tab" aria-controls="company2" aria-selected="false">Company 2</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="company3-tab" data-bs-toggle="tab" href="#company3" role="tab" aria-controls="company3" aria-selected="false">Company 3</a>
+          </li>
+        </ul>
+    
+        <!-- Tab Content -->
+        <div class="tab-content" id="companyTabContent">
+          <!-- Company 1 Content -->
+          <div class="tab-pane fade show active" id="company1" role="tabpanel" aria-labelledby="company1-tab">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>Company 1</h2>
+                <p>This is a description of Company 1. We specialize in offering the best services and products to our customers.</p>
+              </div>
+              <div class="col-md-6">
+                <img src="company1.jpg" alt="Company 1" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+    
+          <!-- Company 2 Content -->
+          <div class="tab-pane fade" id="company2" role="tabpanel" aria-labelledby="company2-tab">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>Company 2</h2>
+                <p>This is a description of Company 2. We excel in creating top-notch products that serve our clients' needs.</p>
+              </div>
+              <div class="col-md-6">
+                <img src="company2.jpg" alt="Company 2" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+    
+          <!-- Company 3 Content -->
+          <div class="tab-pane fade" id="company3" role="tabpanel" aria-labelledby="company3-tab">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>Company 3</h2>
+                <p>This is a description of Company 3. Our focus is on delivering excellent services with the highest level of professionalism.</p>
+              </div>
+              <div class="col-md-6">
+                <img src="company3.jpg" alt="Company 3" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Navigation Arrows -->
+        <div class="d-flex justify-content-center mt-4">
+          <a href="#" class="btn btn-primary me-2" onclick="prevCompany()">&#10094; Previous</a>
+          <a href="#" class="btn btn-primary" onclick="nextCompany()">Next &#10095;</a>
+        </div>
+      </div>
+    </section>
+    
+
+
+
+
+
     <!-- Scripts -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
