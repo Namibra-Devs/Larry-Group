@@ -229,31 +229,81 @@ margin-top: 33px;
   
 }
 
+.carousel-slide .content {
+  
+  position: relative;
+  z-index: 2; /* Ensures text is above the gradient */
+  padding: 40px;
+  color: white;
+  max-width: 60%;
+  text-align: left;
+  box-shadow: none;
+  top: 30%;
+}
 .carousel-slide {
-  display: none;
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh; /* Full viewport height */
   background-size: cover;
   background-position: center;
-  text-align: center;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)); /* Dark to light gradient */
+  z-index: 1;
 }
 
 #slide1 {
   background-image: url('/assets/images/hero-3.png');
+   background-size: cover; 
+  background-position: center;
+  height: 100vh; 
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 #slide2 {
   background-image: url('/assets/images/hero-2.png');
+  background-size: cover; 
+  background-position: center;
+  height: 100vh; 
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #slide3 {
   background-image: url('/assets/images/hero-1.png');
+  background-size: cover; 
+  background-position: center;
+  height: 100vh; 
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #slide4 {
   background-image: url('/assets/images/hero-4.png');
+  background-size: cover; 
+  background-position: center;
+  height: 100vh; 
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
@@ -288,9 +338,51 @@ margin-top: 33px;
  padding: 10px 15px;
  text-decoration: none;
  transition: 0.3s;
+ 
 }
+
 .content .btn:hover{
 background: #363434;
+}
+/* Style for the Learn More button */
+.learn-more-btn {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Initial diagonal arrow next to the button text */
+.learn-more-btn i {
+  margin-left: 12px; 
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Rotate the arrow on hover */
+.learn-more-btn:hover i {
+  transform: rotate(90deg); 
+}
+
+/* Hide the diagonal arrow on hover */
+.learn-more-btn:hover .fa-arrow-up-right {
+  opacity: 0;
+}
+
+/* Add the right arrow after the button text on hover */
+.learn-more-btn::after {
+  content: "\f061"; 
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  position: absolute;
+  right: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show the right arrow on hover */
+.learn-more-btn:hover::after {
+  opacity: 1;
 }
 
 .dots {
@@ -310,6 +402,7 @@ background: #363434;
   display: inline-block;
   transition: background-color 0.6s ease;
   position: relative;
+  z-index: 2;
 }
 
 .dot.active {
@@ -327,8 +420,82 @@ background: #363434;
   transform: translateY(-50%);
 }
 /* Hero Section Responsiveness --------*/
-@media (max-width: 990px) {
+@media (max-width: 768px) {
+  .home-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin-top: 7px;
+  }
+  .carousel-slide .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px; /* Padding adjusted for smaller screens */
+    max-width: 95%;
+    margin-left: 103px;
+    
+  }
+  .carousel-slide h1 {
+    font-size: 2rem;
+  }
+  .content{
+    width: 95%;
+  
+   
+  }
 
+  .carousel-slide p {
+    font-size: 1rem;
+  }
+
+  .learn-more-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .prev, .next {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+  .carousel-slide .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px; /* Padding adjusted for smaller screens */
+  }
+
+  .carousel-slide h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-slide p {
+    font-size: 0.9rem;
+  }
+
+  .learn-more-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .prev, .next {
+    font-size: 16px;
+  }
 }
 
 /* About Us Section--------------------- */
@@ -352,21 +519,21 @@ background: #363434;
 .about-content{
   margin-top: 15%;
 }
-.title-2{
-  font-size: 2.5rem;
+.title-2 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
   color: #000;
-  position: relative;
-  margin-bottom: 10px;
-  font-weight: 700;
-  margin-left: 0;
+}
 
-}
-.title-underline{
-  width: 120px;
+.title-underline {
+  width: 120px; 
   height: 4px;
-  background-color: #000;
-  margin: 10px 0 20px;
+  background-color: black;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
+
 .about-what{
   display: flex;
 }
@@ -387,6 +554,7 @@ background: #363434;
 .service-box:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #aca6a6;
 }
 
 
