@@ -4,17 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Larry-Group</title>
-    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
     <!-- Fonts Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <!-- Navbar Section -->
     <header class="fixed-top">
       <div class="logo">
-        <img src="assets/images/WhatsApp Image 2024-08-03 at 15.16.31_800a421b 2.png" alt="Larry Group Logo" />
+        <img
+          src="assets/images/WhatsApp Image 2024-08-03 at 15.16.31_800a421b 2.png"
+          alt="Larry Group Logo"
+        />
       </div>
       <ul class="navlist">
         <li><a href="#home" class="nav-link active">Home</a></li>
@@ -26,8 +38,146 @@
     </header>
 
     <!-- Hero Section -->
+    <section class="home-section" id="home">
+      <div class="carousel-container">
+        <div class="carousel-slide fade" id="slide1">
+          <div class="content">
+            <h1>
+              Welcome to <br />
+              Larry Group Of Companies
+            </h1>
+            <p>Excellence in Farming, Fashion, Food and More...</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="carousel-slide fade" id="slide2">
+          <div class="content">
+            <h1>Cattle Rearing</h1>
+            <p>
+              We specialized in raising high quality cattle through sustainable
+              and ehtical farm practices: We rear and sell cattle...
+            </p>
+            <a href="#" class="btn btn-primary mt-5">Learn More</a>
+          </div>
+        </div>
+        <div class="carousel-slide fade" id="slide3">
+          <div class="content">
+            <h1>Handmade Clothing</h1>
+            <p>
+              We sprcialized in creating unique handmade garments that blend
+              that blend traditional craftmanship with contemporary style
+            </p>
+            <a href="#" class="btn btn-primary mt-5">Learn More</a>
+          </div>
+        </div>
+        <div class="carousel-slide fade" id="slide4">
+          <div class="content">
+            <h1>Fast Food and Beverages</h1>
+            <p>
+              With diverse menu, fast service and commitment to taste. We offer
+              an unbeatable dinning experieces that satisfy every craving.
+            </p>
+            <a href="#" class="btn btn-primary mt-5">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+        <!-- Dots/Indicators -->
+        <div class="dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </section>
+
+   <!-- About Us Section -->
+   <section id="about" class="py-5">
+    <div class="container">
+      <div class="row d-flex mb-5 about-who">
+        <!-- Image on the left -->
+        <div class="col-md-4 mb-4 mb-lg-0">
+          <img
+            src="images/Group 6.png"
+            alt="About Us Image"
+            class="img-fluid rounded"
+          />
+        </div>
+        <!-- Title and Content on the right -->
+        <div class="col-md-8">
+          <h2 class="title">Who We Are</h2>
+          <div class="title-underline"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque vel mauris sit amet quam facilisis efficitur vel et
+            odio. Ut euismod erat at magna sodales, id ultrices dui ultricies.
+          </p>
+        </div>
+      </div>
+
+      <!-- Second Section with Title, Content, and Boxes -->
+      <div class="row mb-4 text-center">
+        <h2 class="title">What We Do</h2>
+        <div class="title-underline"></div>
+        <p class="">
+          We offer a variety of services to help you grow your business.
+        </p>
+      </div>
+      <div class="about-what">
+      <div class="row ">
+        <!-- Box 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="service-box">
+            <img
+              src="images/hero-3.png"
+              class="img-fluid mb-3" width="200px"
+            />
+            <h4 class="service-title">Service One</h4>
+            <p class="service-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Praesent sit amet.
+            </p>
+          </div>
+        </div>
+        <!-- Box 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="service-box">
+            <img
+              src="images/hero-2.png"
+              class="img-fluid rounded mb-3" width="200px"
+            />
+            <h4 class="service-title">Service Two</h4>
+            <p class="service-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Praesent sit amet.
+            </p>
+          </div>
+        </div>
+        <!-- Box 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="service-box">
+            <img
+              src="images/hero-4.png"
+              class="img-fluid rounded mb-3" width="200px"
+            />
+            <h4 class="service-title">Service Three</h4>
+            <p class="service-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Praesent sit amet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
   
 
+    
     <!-- Scripts -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
