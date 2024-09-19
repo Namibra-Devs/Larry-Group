@@ -567,6 +567,9 @@ background: #363434;
 }
 
 /* Companies Section-------------- */
+.companies-section{
+  padding-top: 50px;
+}
 .nav-tabs {
   display: flex;
   justify-content: flex-start;
@@ -632,17 +635,20 @@ background: #363434;
   align-self: left;
   color: #5c5959;
   margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-
+.whatsapp p:hover{
+  text-decoration: underline;
+  color: #000;
+}
 .tab-content span{
   color: #000;
   font-weight: bold;
 }
 .whatsapp i{
-  font-size: 25px;
+  font-size: 30px;
 }
-
-
 
 /* Companies Section Mobile View------------ */
 @media (max-width: 768px) {
@@ -665,6 +671,116 @@ background: #363434;
     width: 70px;
   }
 }
+
+
+/* Contact Us Section------------------- */
+
+.contact-section {
+  background-color: #000; /* Black background */
+  padding: 30px 20px;
+  color: #fff;
+  text-align: left;
+ padding-top: 170px;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-description {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.social-icons {
+  margin-bottom: 40px;
+}
+
+.social-icon i{
+  font-size: 30px;
+}
+.social-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #363434 /* Change color on hover */
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff; 
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-bottom-color: #5c5959; 
+}
+
+.form-textarea {
+  height: 150px;
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #5c5959; 
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact-section {
+    padding-top: 60px;
+  }
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 0.9rem;
+  }
+
+  .social-icons {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 /* Animations--------------------- */
