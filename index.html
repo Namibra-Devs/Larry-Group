@@ -17,7 +17,9 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- Navbar Section -->
@@ -29,16 +31,18 @@
         />
       </div>
       <ul class="navlist">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About Us</a></li>
-        <li><a href="#companies" class="nav-link">Companies</a></li>
-        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        <li><a href="#home" style="--i:1" class="nav-link active">Home</a></li>
+        <li><a href="#about" style="--i:2" class="nav-link">About Us</a></li>
+        <li><a href="#companies" style="--i:3" class="nav-link">Companies</a></li>
+        <li><a href="#contact" style="--i:4" class="nav-link">Contact Us</a></li>
       </ul>
       <div id="menu-icon" class="bx bx-menu"></div>
     </header>
 
     <!-- Hero Section -->
-    <section class="home-section" id="home">
+    <section class="home-section"  data-aos="fade-down"
+    data-aos-easing="ease-in-sine"
+    data-aos-duration="1000" id="home">
       <div class="carousel-container">
         <div class="carousel-slide fade" id="slide1">
           <div class="content">
@@ -104,9 +108,13 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-5 about-us">
+    <section id="about" class="py-5 about-us"
+>
+    
       <div class="container">
-        <div class="row d-flex mb-5 about-who">
+        <div class="row d-flex mb-5 about-who"  data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1000">
           <!-- Image on the left -->
           <div class="col-md-6 mb-4 mb-lg-0">
             <img
@@ -116,7 +124,9 @@
             />
           </div>
           <!-- Title and Content on the right -->
-          <div class="col-md-6 about-content">
+          <div class="col-md-6 about-content"  data-aos="fade-down"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000">
             <h2 class="title">Who We Are</h2>
             <div class="title-1-underline"></div>
             <p>
@@ -129,7 +139,9 @@
         </div>
 
         <!-- Second Section with Title, Content, and Boxes -->
-        <div class="row mb-4 text-left align-items-left">
+        <div class="row mb-4 text-left align-items-left"  data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000">
           <div class="col-12">
             <h2 class="title-2">What We Do</h2>
             <div class="title-underline"></div>
@@ -140,7 +152,9 @@
           </div>
         </div>
 
-        <div class="about-what">
+        <div class="about-what"  data-aos="fade-down"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1000">
           <div class="row">
             <!-- Box 1 -->
             <div class="col-md-4 mb-4">
@@ -194,7 +208,10 @@
     </section>
 
     <!-- Companies Section------------------------ -->
-    <section class="companies-section" id="companies">
+    <section class="companies-section" 
+    data-aos="fade-down"
+    data-aos-easing="ease-in-sine"
+    data-aos-duration="1000" id="companies">
       <div class="container">
         <h2 class="title-2">Companies</h2>
         <div class="title-underline"></div>
@@ -358,7 +375,10 @@
     </section>
 
     <!-- Contact Us Section------------------ -->
-    <section class="contact-section" id="contact">
+    <section class="contact-section" 
+    data-aos="fade-down"
+    data-aos-easing="ease-in-sine"
+    data-aos-duration="1000" id="contact">
       <div class="container">
         <div class="row">
         
@@ -395,5 +415,11 @@
     <!-- Scripts -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
   </body>
 </html>
