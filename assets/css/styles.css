@@ -567,10 +567,104 @@ background: #363434;
 }
 
 /* Companies Section-------------- */
+.nav-tabs {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: none; 
+  padding-left: 0;
+ 
+}
+.border-tabs .nav-link {
+  border: 1px solid #000;
+  border-radius: 25rem;
+  padding: 10px 50px;
+  background-color: #fff;
+  color: #aca6a6;
+  transition: 0.8s;
+  margin-right: 15px;
+  font-weight: 500;
+}
+.nav-tabs .nav-item:last-child .nav-link {
+  margin-right: 0;
+}
+.border-tabs .nav-link:hover{
+  border: none;
+  background-color: #5c5959;
+  color: #aca6a6;
+  font-weight: bold;
+}
+.border-tabs .nav-link.active {
+  background-color:#000;
+  color: #fff;
+}
+
+.companies-section h2 {
+  font-size: 2rem;
+}
+
+.companies-section img {
+  border-radius: 0.5px;
+ transition: 0.3s;
+}
+.companies-section img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.sandra img:hover{
+  transform: none;
+  box-shadow: none;
+}
+.tab-content{
+  align-items: left;
+  justify-content: left;
+ 
+}
+
+.tab-text{
+  align-items: left;
+  justify-content: left;
+  align-self: left;
+  color: #5c5959;
+}
+.whatsapp p{
+  align-items: left;
+  justify-content: left;
+  align-self: left;
+  color: #5c5959;
+  margin-left: 10px;
+}
+
+.tab-content span{
+  color: #000;
+  font-weight: bold;
+}
+.whatsapp i{
+  font-size: 25px;
+}
 
 
 
+/* Companies Section Mobile View------------ */
+@media (max-width: 768px) {
+ 
+  .border-tabs .nav-link {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    color: #000;
+    
+  }
+  .border-tabs .nav-link:hover{
+    font-weight: normal;
+  }
+  .tab-content img {
+    margin-bottom: 20px; /* Space between image and text */
+    width: 100%; /* Make the image responsive */
 
+  }
+  .sandra img{
+    width: 70px;
+  }
+}
 
 
 /* Animations--------------------- */

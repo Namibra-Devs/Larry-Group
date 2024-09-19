@@ -80,4 +80,4 @@ setInterval(() => {
     changeSlide(1);
 }, 8000);
 
-  
+ 
