@@ -270,7 +270,7 @@ margin-top: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
-
+background-repeat: no-repeat;
 }
 
 #slide2 {
@@ -427,16 +427,17 @@ background: #363434;
     align-items: center;
     height: 100vh;
     text-align: center;
-    margin-top: 7px;
+    margin-top: 3px;
   }
   .carousel-slide .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 15px; /* Padding adjusted for smaller screens */
+    padding:  20px; /* Padding adjusted for smaller screens */
     max-width: 95%;
     margin-left: 103px;
+    text-align: center;
     
   }
   .carousel-slide h1 {
@@ -446,6 +447,9 @@ background: #363434;
     width: 95%;
   
    
+  }
+  #slide1 {
+    width: 100%;
   }
 
   .carousel-slide p {
@@ -594,7 +598,7 @@ background: #363434;
   border: none;
   background-color: #5c5959;
   color: #aca6a6;
-  font-weight: bold;
+
 }
 .border-tabs .nav-link.active {
   background-color:#000;
@@ -758,7 +762,7 @@ background: #363434;
 /* Responsive design */
 @media (max-width: 768px) {
   .contact-section {
-    padding-top: 60px;
+    padding-top: 75px;
   }
   .contact-title {
     font-size: 2rem;
