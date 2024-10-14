@@ -111,9 +111,9 @@ header .navlist a:hover::after {
   z-index: 10001;
   cursor: pointer;
   margin-left: 25px;
-  background: #000;
+  background: #fff;
   border-radius: 3px;
-  color: var(--second-bg-color);
+  color: #000;
   display: none;
 }
 .navlist a.active {
@@ -762,7 +762,7 @@ background: #363434;
 /* Responsive design */
 @media (max-width: 768px) {
   .contact-section {
-    padding-top: 75px;
+    padding-top: 115px;
   }
   .contact-title {
     font-size: 2rem;
