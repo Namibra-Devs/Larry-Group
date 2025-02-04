@@ -677,6 +677,31 @@ background: #363434;
 }
 
 
+/* Map Section----- */
+
+.map-container {
+    width: 100%;
+    height: 400px;
+}
+
+/* Ensure iframe takes full space */
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive adjustments */
+
+
+@media (max-width: 988px) {
+    .map-container {
+        height: 300px; 
+    }
+}
+
+
+
 /* Contact Us Section------------------- */
 
 .contact-section {
