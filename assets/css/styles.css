@@ -659,9 +659,9 @@ background: #363434;
  
   .border-tabs .nav-link {
     padding: 5px 10px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: #000;
-    
+    margin-right: 5px;
   }
   .border-tabs .nav-link:hover{
     font-weight: normal;
